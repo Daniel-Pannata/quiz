@@ -1,3 +1,4 @@
+//test
 import java.util.Scanner;
 public class quiz{
 
@@ -19,11 +20,11 @@ public class quiz{
 		Scanner keyboard = new Scanner(System.in);
 		quiz function = new quiz();
 		while(opsi!=3) {
-			System.out.println("Selamat Datang Di Bank");
+			System.out.println("Selamat Datang ");
 			System.out.println("Nama : Susi");
 			System.out.println("No rek: "+ susi);
 			System.out.println("1. Transfer");
-			System.out.println("2. Cek Mutasi");
+			System.out.println("2. Mutasi");
 			System.out.println("3. Keluar");
 			System.out.print("Pilih Menu : ");
 			opsi = keyboard.nextInt();
@@ -52,18 +53,18 @@ public class quiz{
 				System.out.print("Pilih Menu : ");
 				opsi1 = keyboard.nextInt();
 				switch(opsi1) {
-				case 1 : System.out.print("Masukkan No.Rekening Yang Ingin Ditransfer : ");
+				case 1 : System.out.print("Masukkan No Rekening Yang Ingin Ditransfer : ");
 					rekening = keyboard.nextInt();
 					if(rekening == budi) {
-						System.out.println("Rekening Yang Ingin Ditransfer : Budi");
+						System.out.println("No Rekening Yang Ingin Ditransfer : Budi");
 						do {
 						System.out.print("Jumlah Yang Ingin Ditransfer     : ");
 						jumlah = keyboard.nextInt();
 						System.out.println("Transaksi sebesar : "+jumlah);
-							if(jumlah > saldo_Susi) System.out.println("Saldo Tidak Mencukupi");
+							if(jumlah > saldo_Susi) System.out.println("Saldo Tidak Cukup");
 							
 							else{
-								System.out.println("Transaksi Berhasil");
+								System.out.println("Transaksi Telah Berhasil");
 							}
 						}
 						while(jumlah > saldo_Susi);
@@ -90,10 +91,10 @@ public class quiz{
 				opsi2 = keyboard.nextInt();
 				if(opsi2 == 1) {
 					for(int i = 0; i < index; i++) {
-					    System.out.println("Susi transfer sebesar " + mutasi[i] + " ke rekening Budi");	    
+					    System.out.println("Susi mentransfer " + mutasi[i] + " ke Budi");	    
 					}
 					if(index == 0) {
-						System.out.println("Belum Ad Mutasi");
+						System.out.println("Belum ada Transaksi");
 					}
 				
 				}
